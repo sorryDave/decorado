@@ -14,10 +14,6 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="../static/style.css">
@@ -34,13 +30,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href=""></a>
+                    <a href="/index">home</a>
                 </li>
                 <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
+                    <a href="/login">login</a>
                 </li>
             </ul>
         </nav>
@@ -48,12 +41,7 @@
     </header>
 
     <main>
-        <p>
-            You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger
-            frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more
-            than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of
-            which is the docking navigation).
-        </p>
+            {% block content %}{% endblock %}
     </main>
 
     <footer>
