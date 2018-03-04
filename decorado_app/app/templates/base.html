@@ -30,10 +30,10 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/index">home</a>
+                    <a href="{{ url_for('index') }}">home</a>
                 </li>
                 <li>
-                    <a href="/login">login</a>
+                    <a href="{{ url_for('login') }}">login</a>
                 </li>
             </ul>
         </nav>
@@ -41,6 +41,15 @@
     </header>
 
     <main>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
             {% block content %}{% endblock %}
     </main>
 
