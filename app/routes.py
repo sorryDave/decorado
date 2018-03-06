@@ -13,3 +13,12 @@ def home():
 @app.route('/ejemplos')
 def ejemplos():
     return render_template('ejemplos.html')
+
+@app.route('/normas')
+def normas():
+    return render_template('normas.html')
+
+@app.route('/materiales')
+def materiales():
+    return render_template('materiales.html')
+    
