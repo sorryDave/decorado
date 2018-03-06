@@ -10,6 +10,12 @@ def index():
 def home():
     return render_template('index.html')
 
+
+@app.route('/easter_egg')
+def easter_egg():
+    return render_template('index_template.html')
+
+    
 @app.route('/ejemplos')
 def ejemplos():
     return render_template('ejemplos.html')
@@ -21,4 +27,4 @@ def normas():
 @app.route('/materiales')
 def materiales():
     return render_template('materiales.html')
-    
+

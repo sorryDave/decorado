@@ -25,9 +25,10 @@
 </head>
 
 <body>
+    <div class="container">
     <header>
-        <h1>decorado</h1>
-        <nav>
+        <h1 class="logo">decorado</h1>
+        <nav class="nav_bar">
             <ul>
                 <li>
                     <a href="{{ url_for('index') }}">home</a>
@@ -46,9 +47,10 @@
          {% block content %} {% endblock %}
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>made with love, flask, python, html and css by <h2>Sorry<span>Dave</span></h2></h1></p>
     </footer>
+    </div>
 </body>
 
 </html>

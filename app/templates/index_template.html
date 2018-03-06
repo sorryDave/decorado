@@ -27,29 +27,72 @@
 <body>
     <header>
         <h1>decorado</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="nav_bar">
+                <ul>
+                    <li>
+                        <a href="{{ url_for('index') }}">home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('ejemplos') }}">ejemplos</a>
+                    </li>
+                    <li><a href="{{ url_for('normas') }}">normas</a></li>
+                    <li><a href="{{ url_for('materiales') }}">materiales</a></li>
+                </ul>
+            </nav>
 
     </header>
 
     <main>
-        <p>
-            You should use Skeleton if you're embarking on a smaller project or just don't feel like you need all the utility of larger
-            frameworks. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more
-            than enough to get started. In fact, this site is built on Skeleton and has ~200 lines of custom CSS (half of
-            which is the docking navigation).
-        </p>
+     <section>
+         <article>
+             <h2>¿Para que sirve esta pagina?</h2>
+             <p>
+                    Semantics is the study of the meanings of words and phrases in a language.
+
+                    Semantic elements = elements with a meaning.
+                    What are Semantic Elements?
+                    
+                    A semantic element clearly describes its meaning to both the browser and the developer.
+                    
+                    Examples of non-semantic elements Tells nothing about its content.
+                    
+                    Examples of semantic elements: Clearly defines its content.
+             </p>
+         </article>
+
+         <article>
+                <h2>¿Quien puede participar?</h2>
+                <p>
+                       Semantics is the study of the meanings of words and phrases in a language.
+   
+                       Semantic elements = elements with a meaning.
+                       What are Semantic Elements?
+                       
+                       A semantic element clearly describes its meaning to both the browser and the developer.
+                       
+                       Examples of non-semantic elements Tells nothing about its content.
+                       
+                       Examples of semantic elements: Clearly defines its content.
+                </p>
+            </article>
+
+            <article>
+                    <h2>¿como participar?</h2>
+                    <p>
+                           Semantics is the study of the meanings of words and phrases in a language.
+       
+                           Semantic elements = elements with a meaning.
+                           What are Semantic Elements?
+                           
+                           A semantic element clearly describes its meaning to both the browser and the developer.
+                           
+                           Examples of non-semantic elements Tells nothing about its content.
+                           
+                           Examples of semantic elements: Clearly defines its content.
+                    </p>
+                </article>
+     </section>
+       
     </main>
 
     <footer>
