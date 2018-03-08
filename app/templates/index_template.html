@@ -28,75 +28,97 @@
     <header>
         <h1>decorado</h1>
         <nav class="nav_bar">
-                <ul>
-                    <li>
-                        <a href="{{ url_for('index') }}">home</a>
-                    </li>
-                    <li>
-                        <a href="{{ url_for('ejemplos') }}">ejemplos</a>
-                    </li>
-                    <li><a href="{{ url_for('normas') }}">normas</a></li>
-                    <li><a href="{{ url_for('materiales') }}">materiales</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li>
+                    <a href="{{ url_for('index') }}">home</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('ejemplos') }}">ejemplos</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('normas') }}">normas</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('materiales') }}">materiales</a>
+                </li>
+            </ul>
+        </nav>
 
     </header>
 
     <main>
-     <section>
-         <article>
-             <h2>¿Para que sirve esta pagina?</h2>
-             <p>
-                    Semantics is the study of the meanings of words and phrases in a language.
-
-                    Semantic elements = elements with a meaning.
-                    What are Semantic Elements?
-                    
-                    A semantic element clearly describes its meaning to both the browser and the developer.
-                    
-                    Examples of non-semantic elements Tells nothing about its content.
-                    
-                    Examples of semantic elements: Clearly defines its content.
-             </p>
-         </article>
-
-         <article>
-                <h2>¿Quien puede participar?</h2>
-                <p>
-                       Semantics is the study of the meanings of words and phrases in a language.
-   
-                       Semantic elements = elements with a meaning.
-                       What are Semantic Elements?
-                       
-                       A semantic element clearly describes its meaning to both the browser and the developer.
-                       
-                       Examples of non-semantic elements Tells nothing about its content.
-                       
-                       Examples of semantic elements: Clearly defines its content.
-                </p>
+        <section>
+            <article class="article-paraque">
+                <div class="picture1"></div>
+                <h2>¿Para que sirve esta pagina?</h2>
+                
+                <p>Esta pagina es un laboratorio abierto a todo aquel que quiera experimentar con CSS.</p>
+                <p>Se ofrece un <a href="{{ url_for('materiales') }}">esqueleto básico de HTML5</a> para que los colaboradores maqueten y jueguen, todo esta permitido excepto manipular el propio fichero de Html.</p>
+                <p> En definitiva, es un campo de pruebas de todo lo que siempre quisiste hacer con hojas de estilo y nunca te atreviste, o un lugar donde mostrar tus habilidades y la potencia del diseño Web.</p>
+                
             </article>
 
+            <article class="article-css">
+                <div class="picture1"></div>
+                <h2>CSS no es solo</h2>
+                
+                <p>La gran variedad de estilos, tecnicas y experimentos que ofrece CSS es todo un mundo en constante crecimiento</p>
+                <p>Esta pagina pretende animar a los participantes tanto a expresar su estilo y personalidad,  como a aquel que unicamente quiera hacer un ejercicio de  estilo o reorganizar la presentacion de los elementos del Html original</p>
+                <p>Una de las posibilidades mas interesantes que ofrece CSS es la de jugar con el contenido y reorganizarlo hasta el infinito, incluso dejando irreconocible el mensaje original o dando una vision nueva de este</p>
+                <p>Desde ocultar textos, imagenes hasta resaltarlas para una mayor legibilidad; Reorganizar elementos y componer un mensaje diferente o añadir animaciones e ilustraciones para redirigir la mirada hacia la parte importante o distraer al lector de esta misma</p>
+
+            </article>
             <article>
-                    <h2>¿como participar?</h2>
-                    <p>
-                           Semantics is the study of the meanings of words and phrases in a language.
-       
-                           Semantic elements = elements with a meaning.
-                           What are Semantic Elements?
-                           
-                           A semantic element clearly describes its meaning to both the browser and the developer.
-                           
-                           Examples of non-semantic elements Tells nothing about its content.
-                           
-                           Examples of semantic elements: Clearly defines its content.
-                    </p>
-                </article>
-     </section>
-       
+                <div>
+                    <h2>Internet son muchos, esta web tambien</h2>
+                    <p>Todas las posibilidades, ideas que nunca probarias en un entorno de trabajo, los experimentos, la diversion, la seriedad y el profesionalismo se unen en esta pagina que solo pide una cosa: participacion</p>
+                    <p>Participación, en efecto. Sin colaboradores, diferentes puntos de vista esta página no tiene sentido. Asi que animate y colabora una o las veces que quieras.</p>
+    
+                </div>
+            </article>
+
+
+            <article class="article-participar">
+                <div class="picture2"></div>
+                <h2>¿como participar?</h2>
+                <p>
+                    Descargate el esqueleto de la web en <a href="{{ url_for('materiales') }}">materiales</a>
+
+                </p>
+                <p>Lee las <a href="{{ url_for('normas') }}">normas</a></p>
+                <p>Y envia tu submision a la cuenta de github: <a href="https://github.com/sorryDave/decorado">sorryDave</a> creando una "pull requests" tal y como se indica en <a href="{{ url_for('normas') }}">normas</a></p>
+            </article>
+
+        </section>
+        <aside>
+
+            <h2>maquetadores</h2>
+            <ul>
+                <li>
+                    <a href="#">Juan Doe</a>
+                </li>
+                <li>
+                    <a href="#">Juana Doe</a>
+                </li>
+                <li>
+                    <a href="#">Tu mismo</a>
+                </li>
+                <li>
+                    <a href="#">Nombre apellido</a>
+                </li>
+
+            </ul>
+        </aside>
+
+
     </main>
 
     <footer>
-        <p>made with love, flask, python, html and css by <h2>Sorry<span>Dave</span></h2></h1></p>
+        <p>desarrollo por
+            <h2>Sorry<span>Dave</span>
+            </h2>
+            </h1>
+        </p>
     </footer>
 </body>
 
