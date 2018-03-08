@@ -1,24 +1,22 @@
 {% extends "base.html" %} 
 {% block content %}
 
-</br>
-<h1>normas</h1>
-</br>
-<p>And Easy to Setup pip install Flask FLASK_APP=hello.py flask run Running on http://localhost:5000/ Interested? Download latest
-    release (0.12.2) Read the documentation or download as PDF Join the mailinglist Fork it on github Add issues and feature
-    requests What’s in the Box? built-in development server and debugger integrated unit testing support RESTful request
-    dispatching uses Jinja2 templating support for secure cookies (client side sessions) 100% WSGI 1.0 compliant Unicode
-    based extensively documented </p>
-</br>
-<p><a href="http://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">etutorial github muy practico</a> </p>
-</br>
-<p>And Easy to Setup pip install Flask FLASK_APP=hello.py flask run Running on http://localhost:5000/ Interested? Download latest
-    release (0.12.2) Read the documentation or download as PDF Join the mailinglist Fork it on github Add issues and feature
-    requests What’s in the Box? built-in development server and debugger integrated unit testing support RESTful request
-    dispatching uses Jinja2 templating support for secure cookies (client side sessions) 100% WSGI 1.0 compliant Unicode
-    based extensively documented </p>
 
+<section>
+        <h1>normas</h1>
+<ul>
+    <li>Bajar el Html en <a href="{{ url_for('materiales') }}">materiales</a></li>
+    <li>Se permiten totdo tipo de cambios, siempre y cuando se realizen desde el CSS</li>
+    <li>Las colaboraciones deberan todas llevar el nombre del autor o pseudonimo y asi se mostraran en la pagina</li>
+    <ul>
+        <h3>dos modalidades para enviar colaboraciones</h3>
+        <li>Enviar un correo a <span>shebanglabs@gmail</span> especificando Asunto: <span>decorado web</span> adjuntando en nombre por el cual quiere aparecer en la web y el titulo del diseño</li>
+        <li>realizando un fork del proyecto  <a href="https://github.com/sorryDave/decorado"> en github </a> adjuntando el css en la carpeta app/static y creando una "pull requests" como se indica en el apartado  "colaborar en un proyecto ajeno" de este  <a href="http://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">tutorial de github</a> incluyendo el nombre, titulo del diseño en la requests</li>
+    </ul>
+</ul>
+<p>Aqui hay enlazo un <a href="http://conociendogithub.readthedocs.io/en/latest/data/dinamica-de-uso/">tutorial</a> de github muy práctico para empezar.</p>
 
-</br>
+</section>
+
 
 {% endblock %}

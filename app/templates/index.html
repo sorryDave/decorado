@@ -1,5 +1,82 @@
- {% extends "base.html" %} 
- {% block content %}
+ {% extends "base.html" %} {% block content %}
+
+<section class="section-1">
+    <article class="article-1">
+        <div class="picture-1"></div>
+        <h2 class="title-1">¿Para que sirve esta pagina?</h2>
+
+        <p>Esta pagina es un laboratorio abierto a todo aquel que quiera experimentar con CSS.</p>
+        <p>Se ofrece un
+            <a href="{{ url_for('materiales') }}">esqueleto básico de HTML5</a> para que los colaboradores maqueten y jueguen, todo esta permitido excepto manipular
+            el propio fichero de Html.</p>
+        <p> En definitiva, es un campo de pruebas de todo lo que siempre quisiste hacer con hojas de estilo y nunca te atreviste,
+            o un lugar donde mostrar tus habilidades y la potencia del diseño Web.</p>
+
+    </article>
+
+    <article class="section-2">
+        <div class="picture-2"></div>
+        <h2 class="title-2">CSS es mas que estilo</h2>
+
+        <p>La gran variedad de estilos, tecnicas y experimentos que ofrece CSS es todo un mundo en constante crecimiento</p>
+        <p>Esta pagina pretende animar a los participantes tanto a expresar su estilo y personalidad, como a aquel que unicamente
+            quiera hacer un ejercicio de estilo o reorganizar la presentacion de los elementos del Html original</p>
+        <p>Una de las posibilidades mas interesantes que ofrece CSS es la de jugar con el contenido y reorganizarlo hasta el
+            infinito, incluso dejando irreconocible el mensaje original o dando una vision nueva de este</p>
+        <p>Desde ocultar textos, imagenes hasta resaltarlas para una mayor legibilidad; Reorganizar elementos y componer un
+            mensaje diferente o añadir animaciones e ilustraciones para redirigir la mirada hacia la parte importante o distraer
+            al lector de esta misma</p>
+
+    </article>
+    <article class="article-3">
+        <div class="picture-3"></div>
+            <h2 class="title-2">Tantos estilos como participantes</h2>
+
+            <p>Todas las posibilidades, ideas que nunca probarias en un entorno de trabajo, los experimentos, la diversion,
+                la seriedad y el profesionalismo se unen en esta pagina que solo pide una cosa: participacion</p>
+            <p>Participación, en efecto. Sin colaboradores, diferentes puntos de vista esta página no tiene sentido. Asi que
+                animate y colabora una o las veces que quieras.</p>
+
+    </article>
+
+
+    <article class="article-4">
+        <div class="picture-4"></div>
+        <h2 class="title-4">¿como participar?</h2>
+        <p>
+            Descargate el esqueleto de la web en
+            <a href="{{ url_for('materiales') }}">materiales</a>
+
+        </p>
+        <p>Lee las
+            <a href="{{ url_for('normas') }}">normas</a>
+        </p>
+        <p>Y envia tu submision a la cuenta de github:
+            <a href="https://github.com/sorryDave/decorado">sorryDave</a> creando una "pull requests" tal y como se indica en
+            <a href="{{ url_for('normas') }}">normas</a>
+        </p>
+    </article>
+
+</section>
+<aside>
+
+    <h2>maquetadores</h2>
+    <ul>
+        <li>
+            <a href="#">Juan Doe</a>
+        </li>
+        <li>
+            <a href="#">Juana Doe</a>
+        </li>
+        <li>
+            <a href="#">Tu mismo</a>
+        </li>
+        <li>
+            <a href="#">Nombre apellido</a>
+        </li>
+
+    </ul>
+</aside>
 
 
 
