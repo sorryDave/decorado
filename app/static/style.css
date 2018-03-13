@@ -6,21 +6,23 @@
 
 body {
     font-family: sans-serif;
+    background-color: darkseagreen;
 }
 
 .container{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+
 header {
-    display: bolck;
+
     background-color: tomato;
-    padding: 20px;
-    position: relative;
 }
 
 header>h1 {
-    text-align: center;
-    padding: 20px;
+    background-color: aliceblue;
+ 
 }
 
 a {
@@ -28,41 +30,44 @@ a {
     color: white;
 }
 .nav_bar{
-    text-align: center;
+
+}
+
+.nav_bar>ul{
+    padding:30px;
+    background-color:blue;
+    list-style: none;
 }
 .nav_bar>ul>li {
     background-color: greenyellow;
-    display: inline-block;
 }
 
 .nav_bar>ul>li>a {
-    background-color: teal;
+    background-color: red;
     color: white;
-    padding: 10px;
-}
-
-body {
-    background-color: darkseagreen;
 }
 
 section{
-    padding: 70px;
-
+   
+    background-color: burlywood;
+}
+article{
+    background-color: cornflowerblue;
+  
 }
 article>h2{
+    background-color: cadetblue;
+ 
     color:red;
 }
+aside{
+    background-color: coral;
+}
 xmp{
-    font-family: monospace;
     background-color: lightblue;
 }
 footer {
-    width: 100%;
-    
+   
     background-color: teal;
-    padding: 30px;
-    position: relative;
-    top: -1px;
-    text-align: center;
     
 }
