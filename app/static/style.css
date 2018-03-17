@@ -5,6 +5,8 @@
 }
 
 body {
+    /* background-image: url("../static/photos/pexels-photo-568347.jpeg"); */
+    background-size: cover;
     font-family: sans-serif;
 }
 
@@ -18,6 +20,7 @@ h3 {
     color: rgb(20, 20, 20);
     font-size: 2em;
     text-align: center;
+    padding: 40px;
 }
 
 a {
@@ -27,16 +30,20 @@ a {
 
 
 header {
-    background-color: silver;
+    background-image: url("../static/photos/Trees_1920x1234.png");
+    background-color:darkcyan;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 400px;
 }
-
+/* /home/hellodave/cice_css/decorado/app/static/photos/SeeingSpots_1920x1234.jpg SeeingSpots_1920x1234.jpg*/
 header>h1 {
     width: 50%;
+    color: white;
     text-align: end;
 }
 
@@ -62,59 +69,78 @@ header>h1 {
 }
 
 .nav_bar>ul>li>a {
-    background-color: black;
+    /* background-color: whitesmoke; */
     padding: 3px;
-    color: black;
+    color: white;
 }
 
 .nav_bar>ul>li>a:hover {
-    background-color: silver;
+    background-color: rgba(252, 248, 248, .0);
     transition: all 2s;
 }
 
 .container {
+
+
 }
 
 section {
+    background-image: url("../static/photos/cropped-1605586439-polyagonal-web-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+article{
+    width: 85%;
+    background-color: rgba(56, 26, 26, 0.2);
+    margin: 0 auto;
+}
 article>h2{
-    background-color:grey;
     color:beige;
-    margin: 10px 10px 0;
-    border-radius: 10px 10px 0 0;
 }
 .txt{
-    background-color: lightblue;
     /* text-align: justify; */
     padding: 20px;
-    margin: 0 10px 10px;
-    border-radius: 0 0 10px 10px;
+    /* margin: 0 10px 10px; */
 }
 p{
     margin: 20px;
 }
 
-section>article {
-}
-
-
-/* .article-1{
-    margin: 0 auto;
-    width: 100%;
-} */
-
-
-
 
 aside {
-    background-color: lightcoral;
+    background-image: url("../static/photos/SeeingSpots_1920x1234.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
 }
 
+aside>ul{
+    background-color: rgba(56, 26, 26, 0.5);
+    margin: 20px;
+    padding: 20px;
+    display: inline-block;
+    padding: 0 auto;
+}
+aside>ul>li>a{
+    color: rgb(11, 4, 77);
+
+}
 xmp {
     background-color: lightblue;
 }
 
 footer {
-    background-color: teal;
+
+    color: whitesmoke;
+    height: 30px;
+}
+.bg-footer{
+    background-image: url("../static/photos/Trees_1920x1234.png");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer>h2{
+    padding: 10px;
 }
